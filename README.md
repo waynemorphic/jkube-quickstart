@@ -48,13 +48,12 @@ $ kubectl get pods
 NAME                                READY   STATUS             RESTARTS        AGE
 jkube-quickstart-7d8bf7688b-m6rw9   1/1     Running            0               28s
 ```
-6. Hit the endpoint of running app
+6. Hit the endpoint of the running Java app
 ```shell
 $ kubectl get svc
 NAME               TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
 jkube-quickstart   NodePort    10.105.155.84   <none>        8081:30812/TCP   1m
 
 $ curl `minikube ip`:30812/hello
-
 Hello world
 ```
