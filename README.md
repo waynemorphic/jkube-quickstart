@@ -9,9 +9,17 @@ and without the boilerplate code required for setting up a Kubernetes deployment
 3. Docker desktop
 4. Minikube
 
-### Run Java App
+### Getting Started
+- Clone the repository
+```shell
+$ git clone git@github.com:waynemorphic/jkube-quickstart.git 
+```
+- Move to jkube-quickstart directory
+```shell
+$ cd jkube-quickstart
+```
 
-1. Run the app with maven
+- Run the app with maven
 
 ```shell
 $ mvn exec:java
@@ -19,7 +27,7 @@ $ mvn exec:java
 INFO: Server started on port: 8081
 ```
 
-2. Hit the endpoint
+- Hit the endpoint
 
 ```shell
 $ curl http://localhost:8081/hello
